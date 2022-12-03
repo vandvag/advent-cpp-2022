@@ -4,7 +4,7 @@
 #include "src/Day03.hpp"
 int main(int, char **)
 {
-    Day01 solver;
+    Day03 solver;
     solver.printSolutions();
 
     return 0;

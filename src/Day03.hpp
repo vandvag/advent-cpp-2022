@@ -20,6 +20,7 @@ private:
     int charToScore(char c);
     std::vector<std::string> getRucksackGroup(std::vector<std::string>::const_iterator &it);
     std::vector<char> getCommonChars(std::vector<std::string> strings);
+    // std::unordered_set<char> getCommonChars(std::vector<std::string> strings);
 
 public:
     Day03();

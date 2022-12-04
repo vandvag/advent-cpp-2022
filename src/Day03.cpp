@@ -84,7 +84,7 @@ std::vector<char> Day03::getCommonChars(std::vector<std::string> strings)
     // Mark the position of the character if you encounter it in the first string
     for (auto ch : strings[0])
     {
-        count1[ch]++;
+        charsInString1[ch]++;
     }
 
     for (int i = 1; i < strings.size(); i++)
@@ -92,22 +92,22 @@ std::vector<char> Day03::getCommonChars(std::vector<std::string> strings)
         // Increment the position of the char in the i-th string
         for (auto ch : strings[i])
         {
-            count2[ch]++;
+            charsInString2[ch]++;
         }
 
         // Check if char was already encountered in first string
         for (int i = 0; i < 128; i++)
         {
-            count1[i] = std::min(count1[i], count2[i]);
+            charsInString1[i] = std::min(charsInString1[i], charsInString2[i]);
             // Reset value
-            count2[i] = 0;
+            charsInString2[i] = 0;
         }
     }
 
     for (int i = 0; i < 128; i++)
     {
         // If value is greater than 0 that means it was encountered in all strings
-        if (count1[i] > 0)
+        if (charsInString1[i] > 0)
         {
             res.push_back((char)i);
         }

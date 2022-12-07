@@ -57,7 +57,6 @@ void Day05::getStacksFromStrings(std::vector<std::string> &boxStacksAsStrings)
                 {
                     int num = int(it->at(i) - '0');
                     numOfStacks = num;
-                    idxToStackNum[i] = num;
                 }
             }
             for (int i = 0; i < numOfStacks; i++)

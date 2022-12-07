@@ -17,7 +17,6 @@ class Day05
   private:
     std::vector<std::vector<int>> commands{};
     std::vector<std::stack<char>> stacks{};
-    std::unordered_map<int, int> idxToStackNum{};
     void part1(std::vector<std::stack<char>> stacks);
     void part2(std::vector<std::stack<char>> stacks);
     void getStacksFromStrings(std::vector<std::string> &boxStacksAsStrings);

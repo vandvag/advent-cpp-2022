@@ -17,7 +17,9 @@ add_executable(advent-cpp-2022 main.cpp
     src/Day05.cpp
     src/Day05.hpp
     src/Day06.cpp
-    src/Day06.hpp)
+    src/Day06.hpp
+    src/Day07.cpp
+    src/Day07.hpp)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})

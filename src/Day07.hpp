@@ -9,6 +9,8 @@
 #include <unordered_set>
 #include <vector>
 
+#include "Utils.hpp"
+
 namespace day7
 {
 class Directory

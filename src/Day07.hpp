@@ -18,7 +18,6 @@ class Directory
 {
   private:
     std::string name{};
-    Directory parent;
     std::vector<Directory> directories{};
     std::vector<File> files{};
 

@@ -5,11 +5,12 @@
 #include "src/Day05.hpp"
 #include "src/Day06.hpp"
 #include "src/Day07.hpp"
+#include "src/Day08.hpp"
 #include <iostream>
 
 int main(int, char **)
 {
-    Day07 solver{};
+    Day08 solver{};
     solver.printSolutions();
 
     return 0;

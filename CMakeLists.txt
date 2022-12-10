@@ -8,6 +8,8 @@ enable_testing()
 add_executable(advent-cpp-2022 main.cpp
     src/Utils.cpp
     src/Utils.hpp
+        src/Grid.cpp
+        src/Grid.hpp
     src/Day01.cpp
     src/Day01.hpp
     src/Day02.cpp
@@ -21,7 +23,9 @@ add_executable(advent-cpp-2022 main.cpp
     src/Day06.cpp
     src/Day06.hpp
     src/Day07.cpp
-    src/Day07.hpp)
+    src/Day07.hpp
+        src/Day08.hpp
+        src/Day08.cpp)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})

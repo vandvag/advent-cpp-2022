@@ -9,7 +9,7 @@
 
 int main(int, char **)
 {
-    Day07 solver;
+    Day07 solver{};
     solver.printSolutions();
 
     return 0;

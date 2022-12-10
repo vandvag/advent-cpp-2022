@@ -13,21 +13,29 @@
 
 namespace day7
 {
+class File;
 class Directory
 {
   private:
     std::string name{};
+    Directory parent;
+    std::vector<Directory> directories{};
+    std::vector<File> files{};
 
   public:
     Directory(std::string _name);
     Directory() = default;
+    std::vector<Directory> getDirectories();
+    void addFile(const File &file);
+    void addDirectory(const Directory &directory);
+    Directory getParent() const;
 };
 class File
 {
   private:
     std::string name{};
     long size{};
-    Directory parentDir{};
+    Directory parent{};
 
   public:
     File(std::string _name, long _size);
@@ -38,9 +46,10 @@ class File
 class Day07
 {
   private:
-    day7::Directory root{std::string{"/"}};
-    int part1();
-    int part2();
+    day7::Directory root{};
+    day7::Directory currentDirectory{};
+    long part1();
+    long part2();
 
   public:
     Day07();

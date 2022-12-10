@@ -6,6 +6,8 @@ include(CTest)
 enable_testing()
 
 add_executable(advent-cpp-2022 main.cpp
+    src/Utils.cpp
+    src/Utils.hpp
     src/Day01.cpp
     src/Day01.hpp
     src/Day02.cpp

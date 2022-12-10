@@ -16,4 +16,15 @@ Day09::Day09() {
     lineStream >> direction >> value;
     commands.push_back(Command(direction, value));
   }
+
+  for (Command& command : commands)
+    std::cout << "(" << command.dir << ", " << command.val << ")\n";
 }
+
+void Day09::printSolutions() {
+  std::cout << "Part 1: " << part1() << "\n";
+  std::cout << "Part 2: " << part2() << "\n";
+}
+
+int Day09::part1() { return 0; }
+int Day09::part2() { return 0; }

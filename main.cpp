@@ -8,10 +8,13 @@
 #include "src/Day08.hpp"
 #include <iostream>
 
-int main(int, char **)
-{
-    Day08 solver{};
-    solver.printSolutions();
+int main(int, char **) {
+  Day08 solver{};
+  solver.printSolutions();
 
-    return 0;
+  char ch;
+  int i;
+  std::cin >> ch >> i;
+  std::cout << ch << i << "\n";
+  return 0;
 }

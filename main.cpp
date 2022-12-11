@@ -6,15 +6,13 @@
 #include "src/Day06.hpp"
 #include "src/Day07.hpp"
 #include "src/Day08.hpp"
+#include "src/Day09.hpp"
+#include "src/Day10.hpp"
 #include <iostream>
 
 int main(int, char **) {
-  Day08 solver{};
+  Day10 solver{};
   solver.printSolutions();
 
-  char ch;
-  int i;
-  std::cin >> ch >> i;
-  std::cout << ch << i << "\n";
   return 0;
 }

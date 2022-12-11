@@ -23,6 +23,7 @@ private:
   std::vector<Command> commands;
   std::pair<int, int> headPosition{0, 0};
   std::pair<int, int> tailPosition{0, 0};
+  std::pair<int, int> commandToDirection(Command& command);
   int part1();
   int part2();
 

@@ -17,7 +17,7 @@ Day09::Day09() {
     commands.push_back(Command(direction, value));
   }
 
-  for (Command& command : commands)
+  for (Command &command : commands)
     std::cout << "(" << command.dir << ", " << command.val << ")\n";
 }
 
@@ -28,3 +28,19 @@ void Day09::printSolutions() {
 
 int Day09::part1() { return 0; }
 int Day09::part2() { return 0; }
+
+std::pair<int, int> Day09::commandToDirection(Command &command) {
+  switch (command.dir) {
+  case 'U':
+    return std::pair<int, int>{0, 1};
+  case 'D':
+    return std::pair<int, int>{0, -1};
+  case 'L':
+    return std::pair<int, int>{-1, 0};
+  case 'R':
+    return std::pair<int, int>{1, 0};
+  default:
+    return std::pair<int, int>{0, 0};
+  }
+  return std::pair<int, int>();
+}
